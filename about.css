@@ -62,6 +62,7 @@
 /*Mission*/
 #showcase-mission{
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #showcase-mission .mission-content{
@@ -78,11 +79,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    transition: all ease-in-out 0.5s
-}
-
-#showcase-mission .mission-content #mission-img:hover{
-    transform: scale(1.1)
 }
 
 #showcase-mission .mission-content #mission-text{
@@ -116,6 +112,76 @@
     color: blue;
 }
 
+/*Team*/
+#team{
+    height: 400px;
+    width: 100vw;
+    position: relative;
+    background: url("team.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#team .team-content{
+    padding: 50px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#team #team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#team #team-img img{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 120px;
+    object-fit: fill;
+}
+
+#team #team-info h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#team #team-info .line{
+    margin-bottom: 40px;
+}
+
+#team #team-info ul li{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#team #team-info ul li i{
+    margin-right: 20px;
+    color: rgb(31, 125, 247);
+}
+
+@media only screen and (max-width: 980px){
+    #team .team-content{
+        flex-direction: column;
+    }
+
+    #team{
+        height: 700px;
+    }
+
+    #team #team-img img{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 120px;
+        height: 100px;
+        object-fit: fill;
+    }
+    
+}
+
 @media only screen and (max-width: 560px){
     #showcase-mission .mission-content #mission-text ul li p{
         font-size: 10px;
@@ -123,6 +189,10 @@
 
     #showcase-mission .mission-content #mission-text #lead{
         font-size: 12px;
+    }
+
+    #team #team-info ul li p{
+        font-size: 14px;
     }
     
 }
@@ -182,4 +252,24 @@
     #sub-showcase .sub-content .navigate{
         margin-bottom: 20px;
     }
+}
+
+
+@media only screen and (max-width: 325px){
+    #team .team-content{
+        flex-direction: column;
+    }
+
+    #team{
+        height: 700px;
+    }
+
+    #team #team-img img{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 80px;
+        height: 60px;
+        object-fit: fill;
+    }
+    
 }
