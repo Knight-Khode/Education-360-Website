@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #blogs .blogs-info .links{
@@ -74,9 +74,14 @@
 }
 
 #blogs .blogs-info .lead{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#blogs .blogs-info .lead span{
+    font-weight: bold;
 }
 
 #blogs .blogs-info .btn{
